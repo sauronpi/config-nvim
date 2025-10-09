@@ -8,7 +8,7 @@
 -- e.g. vim.api.nvim_del_augroup_by_name("lazyvim_wrap_spell")
 
 vim.api.nvim_create_autocmd("FileType", {
-  pattern = "c", -- c文件
+  pattern = "c,cpp,h,hpp", -- c文件
   callback = function()
     vim.opt_local.tabstop = 4 -- 一个tab显示为4个空格
     vim.opt_local.shiftwidth = 4 -- 自动缩进时使用4个空格
