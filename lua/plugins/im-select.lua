@@ -11,7 +11,7 @@ return {
       -- 默认英文输入法 ID（可通过 `im-select` 命令获取）
       default_im = "com.apple.keylayout.ABC"
       -- macOS 切换工具（官方默认 "macism"，也可使用 "im-select"）
-      default_cmd = "im-select" -- 若用 macism 可改为 "macism"
+      default_cmd = "macism" -- 若用 macism 可改为 "macism"
     elseif os_name == "Windows_NT" then -- Windows
       -- 默认英文输入法 ID（通常为 1033，可通过 `im-select.exe` 确认）
       default_im = "1033"
