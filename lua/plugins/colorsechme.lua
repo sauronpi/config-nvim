@@ -1,18 +1,26 @@
 return {
-  -- add monokai-pro
+  {
+    "catppuccin/nvim",
+    name = "catppuccin",
+    priority = 1000,
+    opts = {
+      flavour = "mocha",
+      auto_integrations = true,
+    },
+  },
+
   {
     "loctvl842/monokai-pro.nvim",
-    lazy = false,
     priority = 1000,
-    config = function()
-      require("monokai-pro").setup({ filter = "octagon" })
-      vim.cmd.colorscheme("monokai-pro")
-    end,
+    opts = {
+      filter = "octagon",
+    },
   },
-  -- Configure LazyVim to load gruvbox
+
   {
     "LazyVim/LazyVim",
     opts = {
+      -- colorscheme = "catppuccin",
       colorscheme = "monokai-pro",
     },
   },
