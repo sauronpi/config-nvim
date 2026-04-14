@@ -8,7 +8,6 @@ return {
       auto_integrations = true,
     },
   },
-
   {
     "loctvl842/monokai-pro.nvim",
     priority = 1000,
@@ -16,12 +15,19 @@ return {
       filter = "octagon",
     },
   },
-
+  {
+    "navarasu/onedark.nvim",
+    priority = 1000,
+    opts = {
+      style = "darker",
+    },
+  },
   {
     "LazyVim/LazyVim",
     opts = {
-      -- colorscheme = "catppuccin",
-      colorscheme = "monokai-pro",
+      colorscheme = "catppuccin",
+      -- colorscheme = "monokai-pro",
+      -- colorscheme = "onedark",
     },
   },
 }
